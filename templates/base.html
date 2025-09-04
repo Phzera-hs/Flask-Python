@@ -5,12 +5,14 @@
     <title>{% block title %}{% endblock %} - Projeto Flask</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+</head>
+<body class="soccer-field">
     <header>
-        <h1>Projeto Flask</h1>
+        <h1>Futebol Flask</h1>
         <nav>
             <a href="/">Início</a>
-            <a href="/sobre">Sobre</a>
+            <a href="/times">Times</a>
+            <a href="/jogadores">Jogadores</a>
         </nav>
     </header>
 
@@ -19,7 +21,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 - Meu Projeto Flask</p>
+        <p>&copy; 2025 - Futebol Flask - O melhor do futebol na web</p>
     </footer>
 </body>
 </html>

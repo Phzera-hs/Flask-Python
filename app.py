@@ -6,9 +6,13 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/sobre")
-def sobre():
-    return render_template("sobre.html")
+@app.route("/times")
+def times():
+    return render_template("sobre.html")  
+
+@app.route("/jogadores")
+def jogadores():
+    return render_template("jogador.html") 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+   app.run(debug=True, port=5000)  

@@ -1,53 +1,145 @@
-/* Estilo geral */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: orange;
-    color: #222;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+ /* Estilo geral */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #006400, #003300);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-/* Cabeçalho */
-header {
-    background-color: #ff8c00;
-    color: rgb(0, 0, 0);
-    padding: 1rem;
-    text-align: center;
-}
+        /* Cabeçalho */
+        header {
+            background-color: #1a472a;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid #fff;
+        }
 
-header h1 {
-    margin: 0;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
-/* Navegação */
-nav {
-    margin-top: 0.5rem;
-}
+        header h1::before, header h1::after {
+            content: "⚽";
+            margin: 0 10px;
+        }
 
-nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
+        /* Navegação */
+        nav {
+            margin-top: 1rem;
+        }
 
-nav a:hover {
-    text-decoration: underline;
-}
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: #006400;
+            transition: all 0.3s ease;
+        }
 
-/* Conteúdo */
-main {
-    flex: 1;
-    padding: 2rem;
-    text-align: center;
-}
+        nav a:hover {
+            background-color: #00a800;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
 
-/* Rodapé */
-footer {
-    background-color: #ff8c00;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
+        /* Conteúdo */
+        main {
+            flex: 1;
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border: 2px solid #1a472a;
+        }
+
+        h2 {
+            color: #006400;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #006400;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1a472a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 4px solid #fff;
+        }
+
+        /* Elementos de futebol */
+        .soccer-field {
+            background-image: 
+                linear-gradient(rgba(0, 100, 0, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 100, 0, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .team-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .team-list li {
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            border-left: 4px solid #006400;
+        }
+
+        .player-card {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .player-number {
+            background-color: #006400;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .player-info {
+            flex-grow: 1;
+        }
