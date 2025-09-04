@@ -1,0 +1,53 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: orange;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff8c00;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo */
+main {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
